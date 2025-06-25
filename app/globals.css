@@ -5,6 +5,53 @@
   --foreground: #171717;
 }
 
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 15; 
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    fill: #ff00ff;
+    filter: drop-shadow(0 0 4px #ff00ff);
+  }
+  25% {
+    fill: #00ffff;
+    filter: drop-shadow(0 0 4px #00ffff);
+  }
+  50% {
+    fill: #00ff00;
+    filter: drop-shadow(0 0 4px #00ff00);
+  }
+  75% {
+    fill: #ffff00;
+    filter: drop-shadow(0 0 4px #ffff00);
+  }
+  100% {
+    fill: #ff00ff;
+    filter: drop-shadow(0 0 4px #ff00ff);
+  }
+}
+
+.animate-text-glow {
+  animation: textGlow 4s infinite ease-in-out;
+}
+
+
+.triangle-glow {
+  filter: drop-shadow(0 0 10px rgba(14, 82, 174, 0.7));
+}
+
+.animate-dash {
+  animation: dash 1.5s linear infinite;
+}
+
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
