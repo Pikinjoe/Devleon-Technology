@@ -2,6 +2,8 @@ import React from "react";
 import CardConnector from "./ui/CardConnector";
 import { ColourfulText } from "./ui/colorfulText";
 import { animatedCards, animatedLines } from "@/data";
+import { Button } from "./ui/stateful-button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -12,21 +14,26 @@ const Hero = () => {
       <div className="w-11/12 mx-auto flex gap-12 sm:gap-36 lg:gap-4 flex-col lg:flex-row items-center justify-between p-6 lg:min-h-screen">
         <div className="order-2 lg:order-none text-center lg:text-left text-black">
           <h1 className="text-3xl lg:text-6xl font-bold capitalize">
-            elevate your tech presence with devleon <br />{" "}
+            power your future with devleon <br />{" "}
             <ColourfulText text="technology" />
           </h1>
           <p className="mt-4 text-gray-600">
-            At Devleon Technology, we deliver cutting-edge IT solutions, web
-            development, automated doors, close circuit cameras, green energy
-            and networking automation to help business grow
+            Unlock innovation with our cutting-edge IT, security, and green
+            energy solutions. From smart locks to custom software, we help
+            businesses thrive in the digital era.
           </p>
           <div className="mt-4 space-x-4 flex flex-col gap-4 md:flex-row">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:text-blue-500 hover:bg-white transition-colors ease-in-out duration-300 capitalize hover:border-[1px] border-blue-500 font-semibold w-full md:w-fit">
-              contact us now
-            </button>
-            <button className="text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors ease-in-out duration-300 capitalize border-[1px] border-blue-500 font-semibold w-full md:w-fit">
-              explore services
-            </button>
+            <Link href="/contact">
+              <Button className="bg-blue-600 text-white capitalize font-semibold w-full md:w-fit">
+                Get Started Today
+              </Button>
+            </Link>
+
+            <Link href="#services">
+              <Button className="bg-blue-200 hover:ring-blue-200 text-blue-600 capitalize font-semibold w-full md:w-fit">
+                Discover Our Solutions
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -113,6 +120,7 @@ const Hero = () => {
             {/* Animated Dashed Lines */}
             {animatedLines.map((line) => (
               <path
+                key={line.id}
                 id={line.id}
                 stroke={line.stroke}
                 strokeDasharray={line.strokeDasharray}
@@ -126,10 +134,10 @@ const Hero = () => {
           {/* Surrounding CardConnectors */}
           {animatedCards.map((card) => (
             <CardConnector
+              key={card.id}
               id={card.id}
               title={card.title}
-              svgFill={card.svgFill}
-              svgPath={card.svgPath}
+              img={card.img}
               style={card.style}
             />
           ))}

@@ -10,10 +10,11 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizeable-navbar";
-import { navItems } from "@/data";
+import { blogNavItems } from "@/data";
+import Link from "next/link";
 import { useState } from "react";
 
-const Navbar = () => {
+const BlogNav = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,7 +23,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} />
+          <NavItems items={blogNavItems} />
           <div className="flex items-center gap-4">
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
@@ -38,14 +39,14 @@ const Navbar = () => {
           </MobileNavHeader>
 
           <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
-            {navItems.map((item, idx) => (
-              <a
+            {blogNavItems.map((item, idx) => (
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="relative text-neutral-600 dark:text-neutral-300">
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
@@ -61,5 +62,5 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default BlogNav
 

@@ -192,10 +192,10 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <a
-      href="#"
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
       <img
-        src="/assets/Images/dev-logo.png"
+        src="/assets/Icons/new-logo.png"
         alt="logo"
         width={30}
         height={30} />
@@ -226,7 +226,7 @@ export const NavbarButton = ({
 
   return (
     <Tag
-      href={href || undefined}
+      href='tel:+2348165069358'
       className={cn(baseStyles, variantStyles[variant], className)}
       {...props}>
       {children}

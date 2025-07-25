@@ -1,23 +1,42 @@
 export const navItems = [
   {
     name: "Home",
-    link: "#home",
+    link: "/",
   },
   {
     name: "About",
-    link: "#about",
+    link: "/#about",
   },
   {
     name: "Services",
-    link: "#services",
+    link: "/#services",
   },
   {
     name: "Testimonies",
-    link: "#testimonies",
+    link: "/#testimonies",
   },
   {
     name: "Contact",
-    link: "#contact",
+    link: "/contact",
+  },
+];
+
+export const blogNavItems = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Services",
+    link: "/#services",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
   },
 ];
 
@@ -84,64 +103,56 @@ export const animatedCards = [
   {
     id: 1,
     title: "Network",
-    svgFill: "#155dfc",
-    svgPath:
-      "M256 64l128 0 0 64-128 0 0-64zM240 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l48 0 0 32L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 256 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-256 0 0-32 48 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48L240 0zM96 448l0-64 128 0 0 64L96 448zm320-64l128 0 0 64-128 0 0-64z",
+    img: "/assets/Icons/connection.png",
     style:
       "absolute top-[-5%] left-[24%] sm:top-[-25%] lg:left-[18%] xl:left-[23%]",
   },
   {
     id: 2,
     title: "Web Engineer",
-    svgPath:
-      "M19.042 52.257c3.466-3.467 3.085-9.457-.873-13.319-3.9-3.805-9.863-4.058-13.226-.565-1.763 1.832-2.484 4.335-2.2 6.852l-.007-.047c.007 2.209.915 2.648-.678 4.242A7.888 7.888 0 0 1 .51 50.623c-.365.218-.392.746-.058 1.083l.093.093c5.272 5.235 13.34 5.611 18.015.938l.48-.48Z",
+    img: "/assets/Icons/global-network.png",
     style:
       "absolute top-[-5%] right-[80px] sm:top-[-25%] sm:right-[160px] lg:right-[100px] xl:right-[160px]",
   },
   {
     id: 3,
     title: "CCTV",
-    svgPath:
-      "M0 46.27V5.06c0-.622.504-1.127 1.127-1.127h53.746c.623 0 1.127.505 1.127 1.127v41.21c0 .622-.505 1.127-1.127 1.127H1.127A1.127 1.127 0 0 1 0 46.27Z",
+    img: "/assets/Icons/cctv-camera.png",
     style:
       "absolute bottom-[-20px] right-[85px] sm:bottom-[-100px] sm:right-[155px] lg:right-[100px] xl:right-[155px]",
   },
   {
     id: 4,
     title: "Solar",
-    svgPath: "M54.25 7.583h-2.333v-1.75H11.084V1.75h43.167v5.833Z",
+    img: "/assets/Icons/battery.png",
     style:
       "absolute bottom-[-20px] left-[23%] sm:bottom-[-100px] sm:left-[26%] lg:left-[15%] xl:left-[23%]",
   },
   {
     id: 5,
     title: "Internet",
-    svgPath:
-      "M43.826 17.044a2.435 2.435 0 0 0-2.434-2.435H2.434A2.435 2.435 0 0 0 0 17.044v24.348h43.826V17.043Z",
+    img: "/assets/Icons/internet.png",
     style:
       "absolute top-[140px] left-[2px] sm:top-[220px] sm:left-[-20px] xl:left-[-15px]",
   },
   {
     id: 6,
     title: "Smart Lock",
-    svgPath:
-      "M53.375 47.25v6.125h-19.25V49l3.5-3.5L42 49.875l2.625-2.625 2.625 2.625 4.375-4.375 1.75 1.75Z",
+    img: "/assets/Icons/digital-door.png",
     style:
       "absolute top-[140px] right-[2px] sm:top-[215px] sm:right-[-15px] lg:right-[-40px] xl:right-[-15px]",
   },
   {
     id: 7,
     title: "Intercom",
-    svgPath:
-      "M44.647 9.779V43.86a4.4 4.4 0 0 1-4.4 4.4h-24.74a4.4 4.4 0 0 1-4.4-4.4V4.401A4.402 4.402 0 0 1 15.507 0h19.651c.668 0 1.32.152 1.911.438 1.189.572 1.524 1.295 3.66 3.48 2.458 2.668 3.045 2.942 3.546 4.097.243.551.372 1.15.372 1.764Z",
+    img: "/assets/Icons/intercom.png",
     style:
       "absolute top-[50px] left-[2px] sm:top-[75px] lg:top-[70px] xl:top-[75px] sm:left-[-20px] xl:left-[-15px]",
   },
   {
     id: 8,
-    title: "Data",
-    svgPath:
-      "M20.604 25.793v6.36l-.035.019-7.365-4.027a.099.099 0 0 1-.052-.087l.107-6.34 7.345 4.075Z",
+    title: "Electric Fence",
+    img: "/assets/Icons/electric-fence.png",
     style:
       "absolute top-[55px] right-[2px] sm:top-[60px] sm:right-[-15px] lg:right-[-40px] xl:right-[-15px]",
   },
@@ -178,31 +189,59 @@ export const aboutImg = [
 
 export const serviceCards = [
   {
-    id: 1,
+    id: "cctv",
     src: "/assets/Images/cctv.jpeg",
     name: "CCTV",
-    des: "This is the description of the service",
+    des: "Secure your premises with advanced CCTV solutions offering real-time monitoring and high-definition recording.",
     classname: "lg:mt-7",
   },
   {
-    id: 2,
+    id: "solar-energy",
     src: "/assets/Images/sun-solar-panel.jpeg",
     name: "Green Energy",
-    des: "This is the description of the service",
+    des: "Harness sustainable power with our cutting-edge solar energy solutions for businesses and homes.",
     classname: "",
   },
   {
-    id: 3,
+    id: "smart-lock",
     src: "/assets/Images/smartlock.jpeg",
-    name: "IT Consulting",
-    des: "This is the description of the service",
+    name: "Smart Lock",
+    des: "Enhance security with smart locks featuring keyless entry and remote access control.",
     classname: "lg:mt-7",
   },
   {
-    id: 4,
+    id: "electric-fence",
+    src: "/assets/Images/fence1.jpeg",
+    name: "Electric Fencing",
+    des: "Protect your property with high-voltage electric fencing for maximum perimeter security.",
+    classname: "",
+  },
+  {
+    id: "intercom",
+    src: "/assets/Images/intercom2.jpeg",
+    name: "Intercom",
+    des: "Streamline communication with state-of-the-art intercom solutions for homes and offices.",
+    classname: "lg:mt-7",
+  },
+  {
+    id: "internet",
+    src: "/assets/Images/internet1.jpeg",
+    name: "Internet",
+    des: "Stay connected with high-speed, reliable internet solutions tailored to your needs.",
+    classname: "",
+  },
+  {
+    id: "networking",
+    src: "/assets/Images/networking1.jpeg",
+    name: "IT Consulting",
+    des: "Optimize your IT infrastructure with expert consulting and network management services.",
+    classname: "lg:mt-7",
+  },
+  {
+    id: "software",
     src: "/assets/Images/website-photo2.jpeg",
     name: "Software Development",
-    des: "This is the description of the service",
+    des: "Build custom software solutions to drive efficiency and innovation for your business.",
     classname: "",
   },
 ];
@@ -210,32 +249,233 @@ export const serviceCards = [
 export const ideas = [
   {
     id: 1,
-    icon: "icon",
-    title: "innovative technology",
-des: "Always ahead with latest tech trends"
+    icon: "🔧",
+    title: "Innovative Solutions",
+    des: "Stay ahead with cutting-edge technology tailored to your business needs.",
   },
-   {
+  {
     id: 2,
-    icon: "icon",
-    title: "innovative technology",
-des: "Always ahead with latest tech trends2"
+    icon: "🔒",
+    title: "Robust Security",
+    des: "Protect your assets with advanced cybersecurity and physical security systems.",
   },
-   {
+  {
     id: 3,
-    icon: "",
-    title: "innovative technology",
-des: "Always ahead with latest tech trends"
+    icon: "⚡",
+    title: "Scalable Systems",
+    des: "Grow seamlessly with IT solutions that evolve with your business.",
   },
-   {
+  {
     id: 4,
-    icon: "",
-    title: "innovative technology",
-des: "Always ahead with latest tech trends4"
+    icon: "🌍",
+    title: "Sustainable Tech",
+    des: "Embrace eco-friendly solutions with our green energy innovations.",
   },
-   {
+  {
     id: 5,
-    icon: "",
-    title: "innovative technology",
-des: "Always ahead with latest tech trends"
+    icon: "🤝",
+    title: "Client-Centric Approach",
+    des: "Partner with us for personalized support and exceptional service.",
   },
-]
+];
+
+export const testimoniesList = [
+  {
+    id: 1,
+    src: "/assets/Images/army.jpeg",
+    title: "CO MIR Army HQ",
+    name: "Maj Charles Ime",
+    des: "Devleon Technology revolutionized our security infrastructure with their advanced CCTV and intercom systems. The high-definition cameras and AI-powered analytics have significantly enhanced our situational awareness, while the intercoms streamlined communication across our facilities. Their team was professional, delivering a seamless installation process and ongoing support. Devleon’s solutions have become a cornerstone of our security strategy, and we couldn’t be more satisfied with their expertise and dedication.",
+
+    classname: "md:order-1",
+    class: "md:order-2",
+  },
+  {
+    id: 2,
+    src: "/assets/Images/aig.jpeg",
+    title: "2ic FCIID HQ",
+    name: "AIG Paul Okoro",
+    des: "Partnering with Devleon Technology for our green energy needs was a game-changer. Their solar power systems have reduced our energy costs by over 40%, providing reliable power for our operations. The installation process was smooth, and their engineers tailored the system to our specific requirements. Devleon’s commitment to sustainability and their exceptional after-sales support make them a trusted partner for any organization looking to embrace clean energy.",
+
+    classname: "md:order-2",
+    class: "md:order-1",
+  },
+  {
+    id: 3,
+    src: "/assets/Images/navyman.jpeg",
+    title: "COPP Nigerian Navy",
+    name: "Real Admiral Okon Essien",
+    des: "Devleon Technology’s IT consulting services transformed our network infrastructure, enabling faster and more secure operations in my facility. Their team conducted a thorough cybersecurity audit and implemented a scalable network design that supports our growing needs. The professionalism and technical expertise of Devleon’s consultants were outstanding, and their solutions have significantly improved our operational efficiency. We highly recommend Devleon for any IT-driven project.",
+
+    classname: "md:order-1",
+    class: "md:order-2",
+  },
+  {
+    id: 4,
+    src: "/assets/Images/navy.jpeg",
+    title: "CO DOAP Army HQ",
+    name: "Lt Col Tunde Adebowale",
+    des: "Devleon Technology developed a custom software solution for our logistics management, streamlining processes and saving us countless hours. Their developers worked closely with our team to understand our unique challenges, delivering a user-friendly, secure platform that integrates seamlessly with our existing systems. The ongoing support from their team ensures our software remains up-to-date and efficient. Devleon’s expertise in software development has been instrumental in enhancing our operational capabilities.",
+
+    classname: "md:order-2",
+    class: "md:order-1",
+  },
+];
+
+export const services = [
+  {
+    name: "IT Consulting",
+    link: "/networking",
+  },
+  {
+    name: "Electric Fencing",
+    link: "/electric-fence",
+  },
+  {
+    name: "CCTV Solution",
+    link: "/cctv",
+  },
+  {
+    name: "Software Development",
+    link: "/software",
+  },
+  {
+    name: "Digital Transformation",
+    link: "/digital",
+  },
+  {
+    name: "Smart Locks",
+    link: "/smart-lock",
+  },
+  {
+    name: "Intercom Solutions",
+    link: "/intercom",
+  },
+  {
+    name: "Internet Solutions",
+    link: "/internet",
+  },
+  {
+    name: "Green and Solar Energy",
+    link: "/solar-energy",
+  },
+];
+
+export const company = [
+  {
+    name: "About Devleon",
+    link: "/about",
+  },
+  {
+    name: "Privacy Policy",
+    link: "/privacy",
+  },
+  {
+    name: "Terms of Services",
+    link: "/terms",
+  },
+  {
+    name: "FAQs",
+    link: "/faq",
+  },
+];
+
+export const contacts = [
+  {
+    name: "+234-816-506-9358",
+    link: "tel:+2348165069358",
+  },
+  {
+    name: "Support@devleon.com",
+    link: "mailto:devleoncode@gmail.com",
+  },
+  {
+    name: "Abuja, Nigeria",
+    link: "",
+  },
+  {
+    name: "Mon - Sat: 8:00 AM - 6:00 PM",
+    link: "",
+  },
+];
+
+export const details = [
+  {
+    id: "about",
+    title: "About Devleon Technology",
+    img: "",
+    des: "Founded in Abuja, Nigeria, Devleon Technology is a premier provider of innovative IT, security, and sustainable energy solutions. With a passion for empowering businesses and communities, we deliver tailored systems that enhance efficiency, security, and sustainability. Our expertise spans advanced CCTV surveillance, smart lock systems, custom software development, and cutting-edge solar energy solutions. We pride ourselves on our client-centric approach, leveraging the latest technology to create scalable, secure, and future-proof solutions that drive digital transformation. Whether you're a small business, a large enterprise, or a homeowner, Devleon Technology partners with you to navigate the complexities of the digital era, ensuring seamless integration and exceptional results.",
+  },
+  {
+    id: "faq",
+    title: "Frequently Asked Questions",
+    img: "",
+    des: "At Devleon Technology, we understand that choosing the right IT and security solutions can raise questions. Our comprehensive FAQs address everything from project timelines and installation processes to ongoing support and system scalability. Learn how our CCTV systems integrate with smart home platforms, explore the cost-saving benefits of our solar energy solutions, or understand how our IT consulting can optimize your network infrastructure. We provide clear, transparent answers to ensure you feel confident in partnering with us. If you don’t find what you’re looking for, our dedicated support team is available to assist you every step of the way.",
+  },
+  {
+    id: "terms",
+    title: "Terms of Service",
+    img: "",
+    des: "Our Terms of Service outline the framework for a trusted partnership with Devleon Technology. We are committed to delivering high-quality IT, security, and energy solutions with transparency and integrity. These terms cover service agreements, project deliverables, maintenance schedules, and client responsibilities to ensure a smooth collaboration. Whether you’re installing a smart lock system, deploying a corporate network, or adopting green energy, our terms are designed to protect your interests while maintaining the highest standards of service. Contact our team to review how our terms align with your specific project needs.",
+  },
+  {
+    id: "privacy",
+    title: "Privacy Policy",
+    img: "",
+    des: "At Devleon Technology, safeguarding your data is our priority. Our Privacy Policy details how we collect, store, and protect your information across all our services, from cloud-based software solutions to AI-powered CCTV systems. We adhere to strict data protection standards, ensuring compliance with local and international regulations. Whether you’re a business leveraging our IT consulting services or a homeowner using our smart lock systems, your data remains secure and confidential. Our transparent practices and robust cybersecurity measures give you peace of mind while partnering with us.",
+  },
+  {
+    id: "cctv",
+    title: "CCTV Systems",
+    img: "/assets/Images/outdoor-cctv.jpeg",
+    des: "Devleon Technology’s CCTV systems offer unparalleled security for businesses, homes, and public institutions. Our state-of-the-art surveillance solutions feature high-definition video, real-time remote monitoring, and AI-powered analytics for motion detection and facial recognition. Designed for seamless integration, our systems support cloud storage, mobile app access, and 24/7 recording to ensure your property is protected around the clock. From retail stores to large-scale government facilities, our CCTV installations are customized to meet your specific security needs, providing peace of mind and deterring potential threats effectively.",
+  },
+  {
+    id: "intercom",
+    title: "Intercom Systems",
+    img: "/assets/Images/intercom1.jpeg",
+    des: "Enhance communication and security with Devleon Technology’s advanced intercom systems. Our solutions offer crystal-clear audio, video integration, and remote access capabilities, making them ideal for offices, residential complexes, and gated communities. Whether you need a simple audio intercom for a small business or a sophisticated video system for a corporate headquarters, our installations are tailored for ease of use and reliability. Features like smartphone connectivity and integration with smart locks ensure seamless access control, improving both convenience and security for your premises.",
+  },
+  {
+    id: "internet",
+    title: "Internet Solutions",
+    img: "/assets/Images/internet3.jpeg",
+    des: "Stay connected with Devleon Technology’s high-speed, reliable internet solutions. We design and deploy customized connectivity plans for businesses, schools, and homes, ensuring uninterrupted access to the digital world. Our services include fiber-optic installations, wireless networks, and managed Wi-Fi solutions, optimized for speed and scalability. Whether you’re running a data-heavy enterprise or need robust home internet, our expert team ensures low latency, high bandwidth, and secure connections to keep you productive and connected.",
+  },
+  {
+    id: "solar-energy",
+    title: "Green Energy Solutions",
+    img: "/assets/Images/solar2.jpeg",
+    des: "Embrace sustainability with Devleon Technology’s green energy solutions. Our solar power systems are designed to reduce energy costs and environmental impact for businesses, homes, and institutions. From high-efficiency solar panels to advanced battery storage, we provide end-to-end solutions that ensure reliable, clean energy. Our expert engineers assess your energy needs, design custom installations, and offer ongoing maintenance to maximize performance. Power your future with eco-friendly technology that delivers long-term savings and sustainability.",
+  },
+  {
+    id: "electric-fence",
+    title: "Electric Fencing",
+    img: "/assets/Images/fence2.jpeg",
+    des: "Protect your property with Devleon Technology’s high-voltage electric fencing systems, engineered for maximum perimeter security. Our solutions are ideal for commercial properties, residential estates, and high-security facilities, offering robust deterrence against unauthorized access. Featuring durable materials and advanced monitoring technology, our electric fences are customizable to suit any environment, from urban settings to remote locations. Paired with our CCTV and intercom systems, they provide a comprehensive security solution for peace of mind.",
+  },
+  {
+    id: "software",
+    title: "Software Development",
+    img: "/assets/Images/webdev.jpeg",
+    des: "Transform your business with Devleon Technology’s custom software development services. We build tailored solutions, from web and mobile applications to enterprise-grade systems, designed to streamline operations and drive innovation. Our team of skilled developers works closely with you to understand your goals, delivering scalable, secure, and user-friendly software. Whether you need an e-commerce platform, a customer relationship management (CRM) system, or AI-driven automation tools, we ensure seamless integration and measurable results to propel your business forward.",
+  },
+  {
+    id: "networking",
+    title: "IT Consulting",
+    img: "/assets/Images/networking3.jpeg",
+    des: "Optimize your IT infrastructure with Devleon Technology’s expert IT consulting services. We provide comprehensive solutions, including network design, cybersecurity audits, cloud migration, and system integration, tailored to your business needs. Our consultants in Abuja work with organizations of all sizes, from startups to government agencies, to enhance operational efficiency and secure sensitive data. With a focus on scalability and innovation, we help you build a robust IT ecosystem that supports growth and withstands evolving digital challenges.",
+  },
+  {
+    id: "digital",
+    title: "Digital Transformation",
+    img: "/assets/Images/digital.jpeg",
+    des: "Embrace the future with Devleon Technology’s digital transformation services. We leverage AI, cloud computing, and automation to modernize your business processes, improve efficiency, and enhance customer experiences. From digitizing legacy systems to implementing data-driven strategies, our solutions empower businesses in Abuja and beyond to stay competitive in the digital age. Our team provides end-to-end support, from strategy development to implementation, ensuring a seamless transition to a smarter, more connected organization.",
+  },
+  {
+    id: "smart-lock",
+    title: "Smart Locks",
+    img: "/assets/Images/smartlocks.jpeg",
+    des: "Upgrade to next-generation security with Devleon Technology’s smart lock systems. Our solutions offer keyless entry, biometric authentication, and remote access via smartphone apps, making them ideal for homes, offices, and rental properties. Integrated with smart home platforms and our intercom systems, our smart locks provide convenience and enhanced security. Whether you’re managing a corporate facility or securing your home, our customizable solutions ensure easy access control and real-time monitoring for ultimate peace of mind.",
+  },
+];
