@@ -55,15 +55,15 @@ const Contact = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen ">
       <BlogNav />
-      <div className="relative bg-gradient-to-br from-white via-blue-50 to-blue-100 antialiased text-black">
+      <div className="relative antialiased bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:bg-none dark:bg-black text-black dark:text-cyan-200">
         <div className="w-11/12 mx-auto py-14">
           <div className="flex flex-col lg:text-center">
-            <h1 className="font-bold text-xl md:text-4xl text-black">
+            <h1 className="mb-3 font-bold text-2xl md:text-4xl">
               Connect with Devleon Technology
             </h1>
-            <p className="font-medium text-black/80">
+            <p className="font-medium text-black/80 dark:text-cyan-100">
               Ready to transform your business with innovative IT, security, or
               green energy solutions? Fill out the form below or reach out
               directly. Our team in Abuja is here to help!
@@ -152,13 +152,13 @@ const Contact = () => {
               </form>
             </div>
             <div className="flex flex-col gap-6">
-              <h1 className="text-3xl font-semibold mb-6 text-black">
+              <h1 className="text-3xl font-semibold mb-6">
                 Get in Touch
               </h1>
 
               {contacts.map((contact) => (
                 <div
-                  className="flex items-center gap-4 text-black/80 font-semibold"
+                  className="flex items-center gap-4 text-black/80 dark:text-cyan-100 font-semibold"
                   key={contact.name}
                 >
                   <BiChevronsRight />

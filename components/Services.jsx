@@ -7,7 +7,7 @@ import { GrServices } from "react-icons/gr";
 const Services = () => {
   return (
     <div
-      className="relative bg-gradient-to-br from-white via-blue-50 to-blue-100"
+      className="relative bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:bg-none dark:bg-black"
       id="services"
     >
       <div className="w-11/12 mx-auto py-10">
@@ -18,10 +18,10 @@ const Services = () => {
               Services
             </h3>
           </div>
-          <h1 className="font-bold text-4xl mb-5 text-black">
+          <h1 className="font-bold text-4xl mb-5 text-black dark:text-cyan-200">
             Innovative Solutions for a Digital World
           </h1>
-          <p className="text-black/60 font-semibold">
+          <p className="text-black-60 dark:text-cyan-100 font-semibold">
             From advanced security systems to sustainable energy and custom
             software, Devleon Technology delivers solutions that empower
             businesses to succeed.
@@ -45,7 +45,7 @@ const Services = () => {
                   <h2 className="font-bold text-black/80 text-2xl py-3">
                     {card.name}
                   </h2>
-                  <p className="text-black/60 font-semibold text-base leading-relaxed line-clamp-1">
+                  <p className="text-black-60 font-semibold text-base leading-relaxed line-clamp-1">
                     {card.des}
                   </p>
                   <Link href={`/${card.id}`} className="w-fit">

@@ -8,29 +8,29 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div
-      className="relative bg-gradient-to-br from-white via-blue-50 to-blue-100 lg:min-h-screen"
+      className="relative bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:bg-none dark:!bg-black lg:min-h-screen"
       id="home"
     >
       <div className="w-11/12 mx-auto flex gap-12 sm:gap-36 lg:gap-4 flex-col lg:flex-row items-center justify-between p-6 lg:min-h-screen">
-        <div className="order-2 lg:order-none text-center lg:text-left text-black">
-          <h1 className="text-3xl lg:text-6xl font-bold capitalize">
+        <div className="order-2 lg:order-none text-center lg:text-left">
+          <h1 className="text-3xl lg:text-6xl font-bold capitalize text-black dark:text-cyan-200">
             power your future with devleon <br />{" "}
             <ColourfulText text="technology" />
           </h1>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 dark:text-cyan-100">
             Unlock innovation with our cutting-edge IT, security, and green
             energy solutions. From smart locks to custom software, we help
             businesses thrive in the digital era.
           </p>
-          <div className="mt-4 space-x-4 flex flex-col gap-4 md:flex-row">
+          <div className="mt-4 flex flex-col gap-4 md:flex-row">
             <Link href="/contact">
-              <Button className="bg-blue-600 text-white capitalize font-semibold w-full md:w-fit">
+              <Button className="bg-blue-600 text-white capitalize font-semibold min-w-full md:w-fit">
                 Get Started Today
               </Button>
             </Link>
 
             <Link href="#services">
-              <Button className="bg-blue-200 hover:ring-blue-200 text-blue-600 capitalize font-semibold w-full md:w-fit">
+              <Button className="bg-blue-200 hover:ring-blue-200 text-blue-600 capitalize font-semibold min-w-full md:w-fit">
                 Discover Our Solutions
               </Button>
             </Link>

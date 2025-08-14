@@ -15,11 +15,11 @@ const ContentData = ({ params }) => {
   }
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <BlogNav />
-      <div>
+      <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:!bg-black dark:bg-none">
         <Heading title={content.title} />
-        <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 flex justify-center items-center text-black/70 font-semibold py-10">
+        <div className="flex justify-center items-center text-black-60 dark:text-cyan-100 font-semibold py-10">
           {content.img ? (
             <div className="flex flex-col lg:flex-row lg:gap-4 gap-10 w-11/12 mx-auto my-5">
               <div className="w-full lg:w-1/2 h-72 md:h-[420px] lg:h-[500px]">

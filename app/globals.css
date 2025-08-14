@@ -57,6 +57,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-black-60: #00000099;
+  --color-blue-50: #eff6ff ;
+  --color-blue-100: #dbeafe ;
+  --color-blue-600: #155dfc  ; 
+  --color-blue-950: #162456 ;
+  --color-cyan-50: #ecfeff;
+  --color-cyan-100: #cefafe;
+  --color-cyan-200: #a2f4fd;
+  --color-gray-100: #f3f4f6  ;
+  --color-gray-600: #4a5565 ;
+  --color-neutral-300: #d4d4d4  ;
+  --color-neutral-600: #525252 ;
+  --color-neutral-800: #262626  ;
+  --color-neutral-950: #0a0a0a ;
+  --color-zinc-600: #52525c ;
+  --color-zinc-800: #27272a ;
 }
 
 @media (prefers-color-scheme: dark) {

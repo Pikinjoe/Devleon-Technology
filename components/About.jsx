@@ -43,12 +43,12 @@ const About = () => {
           </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-5">
-            <div className="flex flex-col text-center items-center justify-center bg-black/60 rounded-2xl h-80">
+            <div className="flex flex-col text-center items-center justify-center bg-black-60 rounded-2xl h-80">
               <span className="text-4xl">🌐</span>
               <h2 className="font-semibold text-3xl my-4 text-cyan-100">
                 Our Vision
               </h2>
-              <p className="text-cyan-50">
+              <p className="text-cyan-50 text-center px-2">
                 Our vision is to lead the way in digital transformation,
                 empowering businesses with sustainable, secure, and innovative
                 technology.

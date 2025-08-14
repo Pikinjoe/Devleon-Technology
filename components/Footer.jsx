@@ -7,14 +7,14 @@ import { BiChevronsRight } from "react-icons/bi";
 const Footer = () => {
   return (
     <div
-      className="bg-black/60 relative text-cyan-100 antialiased"
+      className="bg-black dark:bg-blue-950 relative text-cyan-100 antialiased"
       id="contact"
     >
       <div className="w-11/12 mx-auto py-14">
         <div className="flex flex-col lg:text-center">
           <div className="flex items-center lg:justify-center mb-5">
             <img
-              src="/assets/Icons/new-logo.png"
+              src="/assets/Images/newLogo.png"
               alt="Devleon logo"
               className="w-20"
             />

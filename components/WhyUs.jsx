@@ -26,7 +26,7 @@ const WhyUs = () => {
           <div className="grid grid-cols-1 gap-4 w-full mt-5">
             {ideas.map((idea) => (
               <div
-                className="flex flex-col md:flex-row text-center justify-center items-center lg:justify-start bg-black/60 rounded-2xl h-40 md:pl-5 md:gap-5"
+                className="flex flex-col md:flex-row text-center justify-center items-center lg:justify-start bg-black-60 rounded-2xl h-40 md:pl-5 md:gap-5"
                 key={idea.id}
               >
                 {idea.icon}
@@ -34,7 +34,7 @@ const WhyUs = () => {
                   <h2 className="font-semibold text-3xl my-4 text-cyan-100 capitalize">
                     {idea.title}
                   </h2>
-                  <p className="text-cyan-50 font-semibold">{idea.des}</p>
+                  <p className="text-cyan-50 font-semibold px-2">{idea.des}</p>
                 </div>
               </div>
             ))}
@@ -46,14 +46,14 @@ const WhyUs = () => {
             alt="networking photo"
             className="object-cover h-96 lg:h-1/2 w-full rounded-lg"
           />
-          <h2 className="font-semibold text-xl my-4">
+          <h2 className="font-semibold text-xl my-4 text-cyan-200">
             Transform your business with Devleon’s innovative solutions
           </h2>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 bg-black-60 rounded-2xl p-4">
             <span className="text-3xl">🚀</span>
             <div>
-              <h2 className="font-semibold text-xl mb-4">Scalable Solution</h2>
-              <p className="font-medium">
+              <h2 className="font-semibold text-xl mb-4 text-cyan-100">Scalable Solution</h2>
+              <p className="font-medium text-cyan-50">
                 Future-proof your business with IT systems that scale
                 effortlessly.
               </p>
