@@ -42,7 +42,7 @@ const Services = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center p-4">
-                  <h2 className="font-bold text-black/80 text-2xl py-3">
+                  <h2 className="font-bold text-black/80 text-2xl py-3 text-nowrap line-clamp-1 mx-auto w-11/12">
                     {card.name}
                   </h2>
                   <p className="text-black-60 font-semibold text-base leading-relaxed line-clamp-1">

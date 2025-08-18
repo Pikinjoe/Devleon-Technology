@@ -1,6 +1,6 @@
+//import Type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { icons } from "@tabler/icons-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Devleon Technology",
   icons: {
-    icon: "/assets/Image/newlogo.png",
-    apple: "/assets/Image/newlogo.png",
-    shortcut: "/assets/Image/newlogo.png",
+    icon: "/assets/Images/newLogo.png",
+    apple: "/assets/Images/newLogo.png",
+    shortcut: "/assets/Images/newLogo.png",
   },
   keywords: [
     "Devleon Technology",

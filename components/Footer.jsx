@@ -32,7 +32,7 @@ const Footer = () => {
             <h1 className="text-3xl font-semibold mb-3">Quick Links</h1>
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
-                <div className="flex items-center gap-4 z-50" key={item.link}>
+                <div className="flex items-center gap-4 z-40" key={item.link}>
                   <BiChevronsRight />
 
                   <Link
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {services.map((service) => (
                 <div
-                  className="flex items-center gap-4 z-50"
+                  className="flex items-center gap-4 z-40"
                   key={service.name}
                 >
                   <BiChevronsRight />
@@ -69,7 +69,7 @@ const Footer = () => {
             <h1 className="text-3xl font-semibold mb-3">Resources</h1>
             <div className="flex flex-col gap-2">
               {company.map((item) => (
-                <div className="flex items-center gap-4 z-50 " key={item.name}>
+                <div className="flex items-center gap-4 z-40 " key={item.name}>
                   <BiChevronsRight />
 
                   <Link
@@ -87,7 +87,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {contacts.map((contact) => (
                 <div
-                  className="flex items-center gap-4 z-50"
+                  className="flex items-center gap-4 z-40"
                   key={contact.name}
                 >
                   <BiChevronsRight />
@@ -108,7 +108,7 @@ const Footer = () => {
             Developed by:{" "}
             <Link
               href="https://devleoncode.netlify.app"
-              className="cursor-pointer z-50 text-blue-500 hover:scale-110"
+              className="cursor-pointer z-40 text-blue-500 hover:scale-110"
             >
               Devleon Code
             </Link>
