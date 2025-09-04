@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col lg:text-center">
           <div className="flex items-center lg:justify-center mb-5">
             <img
-              src="/assets/Images/newLogo.png"
+              src="/assets/Images/devlogo.png"
               alt="Devleon logo"
               className="w-20"
             />

@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Devleon Technology",
   icons: {
-    icon: "/assets/Images/newLogo.png",
-    apple: "/assets/Images/newLogo.png",
-    shortcut: "/assets/Images/newLogo.png",
+    icon: "/assets/Images/devlogo.png",
+    apple: "/assets/Images/devlogo.png",
+    shortcut: "/assets/Images/devlogo.png",
   },
   keywords: [
     "Devleon Technology",
